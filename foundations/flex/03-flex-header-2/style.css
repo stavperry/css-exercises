@@ -12,6 +12,16 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex; /* making the header flexbox*/
+  align-items: center; /* making the items vertically aligned */
+  justify-content: space-between; /* making the right and left side stick to edges */
+  padding: 8px; /* A little bit of padding never hurt nobody*/
+}
+
+.left-side, .right-side {
+  display: flex; /* added a div container for the header parts*/
+  align-items: center; /* making them vertically aligned */
+  gap: 16px;
 }
 
 .profile-image {
@@ -45,4 +55,9 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex; /*making the list items go horizontal */
+  gap: 16px; /*adding a bit of a gap between the items */
+  justify-content: flex-start;
+  margin: 0; /*just removing the ul default gaps */
+  padding: 0; /*same */
 }
