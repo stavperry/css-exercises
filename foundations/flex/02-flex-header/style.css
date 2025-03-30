@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex; /* adding display: flex; to make the divs stack horizontally */
+  justify-content: space-between; /* making the content spread so that left-links and right-links are at the edges of the page*/
+  align-items: center; /* aligning the ul's to the logo's centre */
 }
 
 .logo {
@@ -9,17 +12,20 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 12px;
 }
 
 ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+  list-style-type: none; /* this removes the dots on the list items*/
+  display: flex; /*making the list items stack horizontally */
+  gap: 12px; /* adds some space between the list items */
+  padding: 0;
+  margin: 12px;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+  text-decoration: none; /* this removes the line under the links */
 }
