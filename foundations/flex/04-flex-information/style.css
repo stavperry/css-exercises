@@ -10,6 +10,28 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex; /* making the "information" title centered */
+  justify-content: center; /* as above */
+  margin: 32px; /* adding a gap between the title and the items */
+}
+
+/* adding a flex container for the plant items */
+.plants {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px; /* adding a gap between the items */
+  margin: 32px;
+}
+
+/* making the items into a vertical flex container */
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Making each item's image and text centre-aligned*/
+  width: 200px; /* making the items 200px wide and the text wraps */
 }
 
 /* do not edit this footer */
