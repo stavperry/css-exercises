@@ -5,6 +5,27 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex; /* making the whole page into vertically stacked columns */
+  flex-direction: column; /*see above */
+}
+
+ul {
+  list-style-type: none; /* removes the bullet points from the lists */
+  display: flex; /* turning the points into horitontal lines */
+  gap: 12px; /* adding some space between the elements */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: gray; /*making them gray*/ 
+  text-decoration: none; /* no underline */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* making the left and right stick on the edges */
+  padding: 24px;
 }
 
 img {
@@ -16,6 +37,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +45,20 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* stacking the items vertically */
+  align-items: center; /* centering the items */
+  justify-content: center;
+  flex: auto; /* making the content fill up the center of the page*/
+  gap: 12px; /* adding space between the items */
+}
+
+.footer {
+  background-color: #eeeeee; /* adding background */
+  padding: 24px; /* adding padding */
+  display: flex;
+  justify-content: space-between; /* making left and right stick to the edges */
 }
